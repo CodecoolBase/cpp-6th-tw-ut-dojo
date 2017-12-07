@@ -20,6 +20,7 @@ TEST(PhraseReverse, singleLetter) {
   EXPECT_EQ(reverseFirstN(a, 0), a);
   EXPECT_EQ(reverseFirstN(a, 1), a);
   EXPECT_EQ(reverseFirstN(a, 2), a);
+  EXPECT_EQ(reverseFirstN(a, a.length() + 1), a);
 }
 
 TEST(PhraseReverse, singleWord) {
@@ -30,6 +31,7 @@ TEST(PhraseReverse, singleWord) {
   EXPECT_EQ(reverseWordOrder(abc), abc);
   EXPECT_EQ(reverseFirstN(abc, 0), abc);
   EXPECT_EQ(reverseFirstN(abc, 1), abc);
+  EXPECT_EQ(reverseFirstN(abc, abc.length() + 4), cba);
 }
 
 TEST(PhraseReverse, twoWords) {
