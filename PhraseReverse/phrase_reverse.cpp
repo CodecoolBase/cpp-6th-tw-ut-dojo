@@ -7,10 +7,6 @@
 
 #include "phrase_reverse.h"
 
-void A::foo()
-{
-  a = 8;
-}
 
 namespace {
 // use the fact that input streams are delimeted on whitespace

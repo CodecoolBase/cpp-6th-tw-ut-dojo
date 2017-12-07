@@ -1,12 +1,8 @@
 #pragma once
 
 #include <string>
-class A
-{
-public:
-  int a;
-  void foo();
-};
+
+
 namespace phrase_reverse {
 
 std::string reverse(const std::string &);
